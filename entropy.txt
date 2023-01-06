@@ -1,0 +1,14 @@
+import math
+red_count=2
+green_count=2
+yellow_count=2
+
+total_count=red_count+green_count+yellow_count
+
+red_prob=red_count/total_count
+green_prob=green_count/total_count
+yellow_prob=yellow_count/total_count
+
+entropy=-(red_prob*math.log(red_prob))-(green_prob*math.log(green_prob))-(yellow_prob*math.log(yellow_prob))
+print(entropy)
+
